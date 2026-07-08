@@ -1,0 +1,24 @@
+.header{
+    width:100%;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    background:#181818;
+    border:1px solid #303030;
+    border-radius:6px;
+    padding:20px;
+}
+
+.title{
+    font-size:24px;
+    font-weight:600;
+    color:white;
+}
+
+.role{
+    color:#BCBCBC;
+    font-size:14px;
+}

@@ -1,0 +1,28 @@
+.container{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#111111;
+}
+
+
+.sidebar{
+
+    width:260px;
+
+    padding:20px;
+
+    background:#181818;
+
+    border-right:1px solid #303030;
+}
+
+
+.content{
+
+    flex:1;
+
+    padding:32px;
+}

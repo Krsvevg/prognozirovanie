@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #BCBCBC;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.link:hover {
+  color: white;
+  border-color: #B18CFF;
+  background: rgba(177,140,255,.06);
+}
+
+.active {
+  background: #B18CFF;
+  border-color: #B18CFF;
+  color: #181818;
+  font-weight: 500;
+}

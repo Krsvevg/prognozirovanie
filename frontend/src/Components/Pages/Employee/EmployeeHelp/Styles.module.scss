@@ -1,0 +1,103 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.subtitle {
+  color: #BCBCBC;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px;
+  background: #181818;
+  border: 1px solid #303030;
+  border-radius: 6px;
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.container h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+.container h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.container p,
+.container li {
+  color: #BCBCBC;
+  line-height: 1.7;
+}
+
+.container ul {
+  padding-left: 20px;
+}
+
+.formula {
+  background: #111111;
+
+  border: 1px solid #303030;
+
+  border-radius: 6px;
+
+  padding: 18px;
+
+  color: #B18CFF;
+
+  font-family: Consolas, monospace;
+
+  overflow-x: auto;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tableWrapper table {
+  width: 100%;
+}
+
+.tableWrapper th,
+.tableWrapper td {
+  padding: 14px;
+
+  border: 1px solid #303030;
+}
+
+.tableWrapper th {
+  background: #202020;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+.tableWrapper td {
+  color: #BCBCBC;
+}

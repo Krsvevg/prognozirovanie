@@ -1,0 +1,10 @@
+fastapi[standard]
+sqlalchemy
+asyncpg
+pandas
+openpyxl
+pydantic
+asyncpg
+scipy
+matplotlib
+apscheduler

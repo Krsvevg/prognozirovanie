@@ -1,0 +1,82 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent {
+  width: 430px;
+  background: #181818;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  padding: 24px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 34px;
+  height: 34px;
+  background: transparent;
+  border: 1px solid #303030;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.closeButton:hover {
+  border-color: #B18CFF;
+  color: #B18CFF;
+}
+
+.loadingState,
+.successState,
+.errorState {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid #303030;
+  border-top: 3px solid #B18CFF;
+  animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.reportLink {
+  color: #B18CFF;
+  word-break: break-word;
+}
+
+.retryButton,
+.closeModalButton {
+  margin-top: 8px;
+  background: #B18CFF;
+  color: #181818;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.retryButton:hover,
+.closeModalButton:hover {
+  background: #c7a8ff;
+}
