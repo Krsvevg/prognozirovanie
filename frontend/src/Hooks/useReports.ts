@@ -11,7 +11,7 @@ export type Report = {
   url: string;
 };
 
-const API_URL = `${import.meta.env.VITE_API_URL}/api/v1/reports`;
+const API_URL = '/api/v1/reports/';
 
 export function useReports() {
   const [reports, setReports] = useState<Report[]>([]);

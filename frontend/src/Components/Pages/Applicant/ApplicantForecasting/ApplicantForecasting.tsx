@@ -72,42 +72,27 @@ function ApplicantForecastingComponent(): JSX.Element {
           </p>
         </div>
 
-        <div className={styles.container}>
-          <div className={styles.input_container}>
-            <label htmlFor="specialty">
-              Направление подготовки
-            </label>
+        <div className={styles.input_container}>
+          <label htmlFor="specialty">
+            Направление подготовки
+          </label>
 
-            <select
-              id="specialty"
-              value={specialty}
-              onChange={(e)=> {
-                setSpecialty(e.target.value);
-                setValidationError('');
-              }}
-            >
-              <option value="">
-                Выберите направление
-              </option>
-              {
-                specialties.map(item => (
-                  <option
-                    key={item.value}
-                    value={item.value}
-                  >
-                    {item.label}
-                  </option>
-                ))
-              }
-            </select>
-            {
-              validationError && (
-                <span className={styles.error}>
-                  {validationError}
-                </span>
-              )
-            }
-          </div>
+          <Select
+            id="specialty"
+            value={specialty}
+            options={specialties}
+            placeholder="Выберите направление"
+            onChange={(value) => {
+              setSpecialty(value);
+              setValidationError('');
+            }}
+          />
+
+          {validationError && (
+            <span className={styles.error}>
+              {validationError}
+            </span>
+          )}
         </div>
 
         <div className={styles.buttons}>

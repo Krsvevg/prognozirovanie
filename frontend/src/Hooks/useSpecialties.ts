@@ -11,7 +11,7 @@ type ApiSpecialty = {
   id: number;
 };
 
-const API_URL = `${import.meta.env.VITE_API_URL}/api/v1/specialties/short`;
+const API_URL = `/api/v1/specialties/short`;
 
 export function useSpecialties() {
   const [specialties, setSpecialties] = useState<Specialty[]>([]);
