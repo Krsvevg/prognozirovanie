@@ -39,26 +39,45 @@ docker compose up --build
 После успешного запуска будут доступны:
 
 Backend API:
+
 http://localhost:8000
+
 Swagger документация:
+
 http://localhost:8000/docs
+
 ReDoc:
+
 http://localhost:8000/redoc
+
 Остановка backend:
+
 docker compose down
+
 💻 Запуск Frontend
+
 Откройте новый терминал.
+
 Перейдите в папку frontend:
+
 cd frontend
+
 Установите зависимости:
+
 npm install
 Запустите приложение:
+
 npm run dev
+
 После запуска приложение будет доступно:
 http://localhost:5173
 
 Сервис	Адрес
+
 Frontend	http://localhost:5173
+
 Backend API	http://localhost:8000
+
 Swagger	http://localhost:8000/docs
+
 ReDoc	http://localhost:8000/redoc
